@@ -28,14 +28,14 @@
             position: relative;
             box-sizing: border-box;
             page-break-after: always;
+            display: flex;
+            flex-direction: column;
         }
         h1, h2, h3 {
             font-family: 'Playfair Display', serif;
         }
         .capa {
             background: linear-gradient(135deg, #EBFFFF 0%, #F3E8FF 100%);
-            display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
@@ -43,38 +43,42 @@
         .calendar-table {
             width: 100%;
             border-collapse: separate;
-            border-spacing: 0 6px;
+            border-spacing: 0 4px;
         }
         .calendar-table th {
-            padding: 8px;
+            padding: 6px;
             text-align: left;
-            font-size: 0.7rem;
+            font-size: 0.65rem;
             text-transform: uppercase;
             letter-spacing: 0.05em;
             color: #718096;
             border-bottom: 2px solid #E2E8F0;
         }
         .calendar-table td {
-            padding: 8px;
+            padding: 6px;
             background: #F8FAFC;
             border-top: 1px solid #EDF2F7;
             border-bottom: 1px solid #EDF2F7;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
         }
-        .calendar-table td:first-child { border-left: 1px solid #EDF2F7; border-radius: 8px 0 0 8px; }
-        .calendar-table td:last-child { border-right: 1px solid #EDF2F7; border-radius: 0 8px 8px 0; }
+        .calendar-table td:first-child { border-left: 1px solid #EDF2F7; border-radius: 6px 0 0 6px; }
+        .calendar-table td:last-child { border-right: 1px solid #EDF2F7; border-radius: 0 6px 6px 0; }
         
         .check-box-circle {
-            width: 20px;
-            height: 20px;
+            width: 18px;
+            height: 18px;
             border: 2px solid #CBD5E0;
             border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             margin: 0 auto;
         }
         
+        .footer-brand {
+            margin-top: auto;
+            padding-top: 20px;
+            border-top: 1px solid #F0F4F8;
+            text-align: center;
+        }
+
         @media print {
             body { background: none; }
             .page { margin: 0; box-shadow: none; }
@@ -98,88 +102,210 @@
         </div>
     </div>
 
-    <!-- PÁGINA 2: FILOSOFIA E MÉTODO -->
+    <!-- PÁGINA 2: INTRODUÇÃO -->
     <div class="page">
-        <h2 class="text-3xl text-teal-800 mb-8 border-b pb-2">A Filosofia do Movimento Fluido</h2>
+        <h2 class="text-3xl text-teal-800 mb-8 border-b pb-2 italic">Bem-vinda ao seu despertar</h2>
         <div class="prose text-gray-700 leading-relaxed max-w-none">
-            <p class="mb-6">Você não está preguiçosa. Você está exausta. O peso que sente no corpo não é falta de caráter, é um sistema nervoso em alerta constante e articulações que perderam a sua "hidratação" natural.</p>
+            <p class="mb-4">Se chegou até aqui, é porque o seu corpo está a tentar dizer-lhe algo. Talvez sinta que os seus movimentos estão "presos", que a energia acaba antes do dia terminar ou que o exercício tradicional se tornou uma punição.</p>
             
-            <p class="mb-6">Imagine uma porta que ficou fechada por anos. Se você tentar derrubá-la com um chute, pode quebrar as dobradiças. Se você aplicar um cuidado suave e movê-la milímetro a milímetro, ela volta a funcionar perfeitamente.</p>
-            
-            <div class="bg-teal-50 p-8 rounded-2xl border-l-4 border-teal-400 my-10">
-                <p class="italic text-teal-900 text-lg leading-relaxed">
-                    "Substituímos a punição pelo prazer. Aqui, o movimento é um nutriente, não uma obrigação."
-                </p>
+            <p class="mb-4">O <strong>Corpo Leve de Novo</strong> não é sobre performance. É sobre <strong>espaço</strong>. É sobre dar ao seu sistema nervoso a segurança necessária para ele deixar os seus músculos relaxarem e as suas articulações fluírem.</p>
+
+            <div class="bg-teal-50 p-6 rounded-2xl border-l-4 border-teal-400 my-6">
+                <h4 class="font-bold text-teal-900 mb-2">O que vamos transformar:</h4>
+                <ul class="list-disc pl-5 space-y-1 text-sm">
+                    <li>A rigidez matinal em fluidez.</li>
+                    <li>O cansaço crónico em vitalidade sustentável.</li>
+                    <li>A desconexão com o corpo em presença absoluta.</li>
+                </ul>
             </div>
 
-            <h3 class="text-2xl font-bold text-teal-700 mt-8 mb-4 italic underline decoration-teal-200">O Ritual 1-5-1</h3>
-            <p class="mb-4">O nosso segredo é a constância mínima viável. São apenas 7 minutos que mudam a química do seu dia:</p>
-            <ul class="list-disc pl-6 space-y-2">
-                <li><strong>1 Minuto de Chegada:</strong> Respirar e habitar o corpo.</li>
-                <li><strong>5 Minutos de Movimento:</strong> Escolher 2 opções do nosso guia.</li>
-                <li><strong>1 Minuto de Fechamento:</strong> Reconhecer o esforço e registar no mapa.</li>
-            </ul>
+            <h3 class="text-2xl font-bold text-teal-700 mt-8 mb-4">A Ciência do "Suave"</h3>
+            <p>Trabalhamos com a <strong>fáscia</strong> — o tecido conjuntivo que envolve tudo no seu corpo. Quando não nos movemos com qualidade, a fáscia "seca" e cola. O nosso método atua como uma hidratação profunda através de micromovimentos conscientes.</p>
+        </div>
+        <div class="footer-brand">
+            <p class="text-[10px] text-gray-400 uppercase tracking-widest">Corpo Leve de Novo • Introdução</p>
         </div>
     </div>
 
-    <!-- PÁGINA 3: GUIA DE MOVIMENTOS (SEMANA 1 E 2) -->
+    <!-- PÁGINA 3: O MÉTODO 1-5-1 -->
     <div class="page">
-        <h2 class="text-2xl text-teal-800 mb-6 uppercase tracking-wide border-b-2 border-teal-50 pb-2">Bônus 2: Guia de Movimentos</h2>
-        <p class="text-sm text-gray-600 mb-8 italic">Escolha dois movimentos por dia. Sem pressa, com foco na sensação.</p>
-        
-        <div class="grid grid-cols-1 gap-8">
-            <div class="p-6 bg-teal-50 rounded-2xl border border-teal-100">
-                <h4 class="font-bold text-teal-700 mb-4 flex items-center">
-                    <span class="bg-teal-700 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs mr-2">1</span>
-                    Semana 1: Destravar (Eixo Central)
-                </h4>
-                <div class="grid grid-cols-1 gap-3 text-sm text-gray-700">
-                    <p><strong>1. Balanço das Águas:</strong> Gire o tronco soltando os braços como cordas.</p>
-                    <p><strong>2. Abraço Infinito:</strong> Expanda o peito e depois abrace-se fundo.</p>
-                    <p><strong>3. Gato Sentado:</strong> Arqueie e curve a coluna enquanto está sentada.</p>
-                    <p><strong>4. Pêndulo de Cabeça:</strong> Semicírculos lentos (orelha a orelha).</p>
-                    <p><strong>5. Escova de Escápulas:</strong> Suba os ombros e solte-os com um suspiro.</p>
-                    <p><strong>6. Girassol:</strong> Inclinações laterais suaves com as mãos ao alto.</p>
-                    <p><strong>7. Torção Suave:</strong> Use a cadeira para girar o tronco levemente.</p>
+        <h2 class="text-3xl text-teal-800 mb-8 border-b pb-2 italic text-right">O Ritual 1-5-1</h2>
+        <div class="prose text-gray-700 leading-relaxed max-w-none">
+            <p class="mb-6">Esqueça as horas de ginásio. A ciência mostra que o corpo responde melhor a estímulos curtos e frequentes do que a exaustão esporádica. O ritual diário de 7 minutos divide-se assim:</p>
+            
+            <div class="grid grid-cols-1 gap-4 mb-8">
+                <div class="flex items-center p-4 bg-white border border-teal-100 rounded-xl">
+                    <div class="bg-teal-600 text-white w-10 h-10 rounded-lg flex items-center justify-center font-bold mr-4">1'</div>
+                    <div>
+                        <h4 class="font-bold text-teal-900">Chegada e Escuta</h4>
+                        <p class="text-xs">Feche os olhos. Sinta o peso dos pés. Onde está a tensão agora?</p>
+                    </div>
+                </div>
+                <div class="flex items-center p-4 bg-white border border-teal-100 rounded-xl shadow-sm">
+                    <div class="bg-teal-500 text-white w-10 h-10 rounded-lg flex items-center justify-center font-bold mr-4">5'</div>
+                    <div>
+                        <h4 class="font-bold text-teal-900">Movimento Nutritivo</h4>
+                        <p class="text-xs">Escolha 2 movimentos do guia. Sem pressa, focando na respiração.</p>
+                    </div>
+                </div>
+                <div class="flex items-center p-4 bg-white border border-teal-100 rounded-xl">
+                    <div class="bg-teal-400 text-white w-10 h-10 rounded-lg flex items-center justify-center font-bold mr-4">1'</div>
+                    <div>
+                        <h4 class="font-bold text-teal-900">Selagem e Registo</h4>
+                        <p class="text-xs">Agradeça ao seu corpo. Marque o seu progresso no Mapa do Sucesso.</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="p-6 bg-purple-50 rounded-2xl border border-purple-100">
-                <h4 class="font-bold text-purple-700 mb-4 flex items-center">
-                    <span class="bg-purple-700 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs mr-2">2</span>
-                    Semana 2: Ativar (Quadril e Pernas)
-                </h4>
-                <div class="grid grid-cols-1 gap-3 text-sm text-gray-700">
-                    <p><strong>1. Relógio de Pelve:</strong> Movimentos circulares curtos com a bacia.</p>
-                    <p><strong>2. Garra de Pés:</strong> Ative os dedos dos pés contra o chão.</p>
-                    <p><strong>3. Círculo Espacial:</strong> Rotações grandes de quadril em pé.</p>
-                    <p><strong>4. Marcha Sentada:</strong> Eleve os joelhos alternadamente (sentada).</p>
-                    <p><strong>5. Beijo no Joelho:</strong> Puxe um joelho contra o peito com carinho.</p>
-                    <p><strong>6. Tornozelo Bailarino:</strong> Desenhe círculos com os pés no ar.</p>
-                    <p><strong>7. Cadeira Imaginária:</strong> Ativação leve das coxas contra a parede.</p>
-                </div>
-            </div>
+            <h3 class="text-xl font-bold text-teal-800 mb-4 italic">As Regras de Ouro</h3>
+            <ol class="list-decimal pl-6 space-y-3 text-sm">
+                <li><strong>Nunca force na dor:</strong> Se doer, diminua a amplitude. O corpo protege-se da dor travando mais.</li>
+                <li><strong>Respire pelo nariz:</strong> A respiração nasal acalma o sistema nervoso.</li>
+                <li><strong>Sorriso interno:</strong> Mantenha o rosto relaxado. A tensão na mandíbula trava o quadril.</li>
+            </ol>
+        </div>
+        <div class="footer-brand">
+            <p class="text-[10px] text-gray-400 uppercase tracking-widest">Corpo Leve de Novo • Metodologia</p>
         </div>
     </div>
 
-    <!-- PÁGINA 4: MAPA DO SUCESSO -->
+    <!-- PÁGINA 4: GUIA DE MOVIMENTOS - SEMANA 1 -->
+    <div class="page">
+        <h2 class="text-2xl text-teal-800 mb-6 uppercase tracking-widest border-b pb-2 italic">Semana 1: Destravar o Eixo</h2>
+        <p class="text-sm text-gray-600 mb-8">Foco: Coluna, Pescoço e Ombros. Criar espaço para a respiração fluir.</p>
+        
+        <div class="space-y-4">
+            <div class="p-4 bg-teal-50 rounded-xl flex items-start">
+                <span class="font-bold text-teal-700 mr-4">01</span>
+                <p class="text-sm"><strong>Balanço das Águas:</strong> Em pé, gire o tronco deixando os braços soltos baterem suavemente no corpo. Imagine que os seus braços são cordas vazias.</p>
+            </div>
+            <div class="p-4 bg-white border border-gray-100 rounded-xl flex items-start">
+                <span class="font-bold text-teal-700 mr-4">02</span>
+                <p class="text-sm"><strong>Abraço Infinito:</strong> Abra os braços inspirando, sinta o peito expandir. Ao expirar, abrace-se fundo, tentando tocar nas escápulas.</p>
+            </div>
+            <div class="p-4 bg-teal-50 rounded-xl flex items-start">
+                <span class="font-bold text-teal-700 mr-4">03</span>
+                <p class="text-sm"><strong>Gato Sentado:</strong> Sentada, coloque as mãos nos joelhos. Inspire arqueando as costas e olhando para cima; expire curvando e olhando para o umbigo.</p>
+            </div>
+            <div class="p-4 bg-white border border-gray-100 rounded-xl flex items-start">
+                <span class="font-bold text-teal-700 mr-4">04</span>
+                <p class="text-sm"><strong>Pêndulo de Cabeça:</strong> Deixe o queixo cair no peito. Mova a orelha direita para o ombro direito, passe pelo centro e vá para a esquerda. Suavemente.</p>
+            </div>
+            <div class="p-4 bg-teal-50 rounded-xl flex items-start">
+                <span class="font-bold text-teal-700 mr-4">05</span>
+                <p class="text-sm"><strong>Escova de Escápulas:</strong> Suba os ombros até as orelhas ao inspirar. Ao expirar, solte-os de uma vez com um som de "ahhh". Repita 5 vezes.</p>
+            </div>
+            <div class="p-4 bg-white border border-gray-100 rounded-xl flex items-start">
+                <span class="font-bold text-teal-700 mr-4">06</span>
+                <p class="text-sm"><strong>Girassol:</strong> Entrelace as mãos e leve-as acima da cabeça. Incline o corpo para um lado e para o outro, sentindo as costelas abrirem.</p>
+            </div>
+            <div class="p-4 bg-teal-50 rounded-xl flex items-start">
+                <span class="font-bold text-teal-700 mr-4">07</span>
+                <p class="text-sm"><strong>Torção de Cadeira:</strong> Sentada de lado na cadeira, use o encosto para ajudar a girar o tronco. Mantenha os pés firmes no chão.</p>
+            </div>
+        </div>
+        <div class="footer-brand">
+            <p class="text-[10px] text-gray-400 uppercase tracking-widest">Corpo Leve de Novo • Guia Prático</p>
+        </div>
+    </div>
+
+    <!-- PÁGINA 5: GUIA DE MOVIMENTOS - SEMANA 2 -->
+    <div class="page">
+        <h2 class="text-2xl text-purple-800 mb-6 uppercase tracking-widest border-b pb-2 italic text-right">Semana 2: Base e Liberdade</h2>
+        <p class="text-sm text-gray-600 mb-8 text-right italic">Foco: Quadril e Pernas. Desbloquear a energia acumulada na bacia.</p>
+        
+        <div class="space-y-4">
+            <div class="p-4 bg-purple-50 rounded-xl flex items-start">
+                <span class="font-bold text-purple-700 mr-4">01</span>
+                <p class="text-sm"><strong>Relógio de Pelve:</strong> Sentada na ponta da cadeira, imagine que o seu quadril é um relógio. Mova o peso para as 12h, 6h, 3h e 9h.</p>
+            </div>
+            <div class="p-4 bg-white border border-gray-100 rounded-xl flex items-start">
+                <span class="font-bold text-purple-700 mr-4">02</span>
+                <p class="text-sm"><strong>Garra de Pés:</strong> Sentada ou em pé, tente "agarrar" o chão com os dedos dos pés e soltar. Ativa a fáscia plantar e a base do corpo.</p>
+            </div>
+            <div class="p-4 bg-purple-50 rounded-xl flex items-start">
+                <span class="font-bold text-purple-700 mr-4">03</span>
+                <p class="text-sm"><strong>Círculo Espacial:</strong> Em pé, mãos na cintura. Faça círculos bem grandes com o quadril, como se estivesse a usar um hula-hop gigante.</p>
+            </div>
+            <div class="p-4 bg-white border border-gray-100 rounded-xl flex items-start">
+                <span class="font-bold text-purple-700 mr-4">04</span>
+                <p class="text-sm"><strong>Marcha Sentada:</strong> Levante um joelho de cada vez enquanto está sentada, mantendo as costas direitas e o abdómen levemente ativo.</p>
+            </div>
+            <div class="p-4 bg-purple-50 rounded-xl flex items-start">
+                <span class="font-bold text-purple-700 mr-4">05</span>
+                <p class="text-sm"><strong>Beijo no Joelho:</strong> Sentada, puxe um joelho em direção ao peito e segure por alguns segundos. Sinta o alongamento no glúteo.</p>
+            </div>
+            <div class="p-4 bg-white border border-gray-100 rounded-xl flex items-start">
+                <span class="font-bold text-purple-700 mr-4">06</span>
+                <p class="text-sm"><strong>Tornozelo Bailarino:</strong> Estenda uma perna e desenhe círculos lentos com o pé. Mude o sentido. Sinta a articulação "lubrificar".</p>
+            </div>
+            <div class="p-4 bg-purple-50 rounded-xl flex items-start">
+                <span class="font-bold text-purple-700 mr-4">07</span>
+                <p class="text-sm"><strong>Cadeira de Parede:</strong> Encoste as costas na parede e desça um pouco, como se fosse sentar no ar. Segure por 15 segundos para acordar as coxas.</p>
+            </div>
+        </div>
+        <div class="footer-brand">
+            <p class="text-[10px] text-gray-400 uppercase tracking-widest">Corpo Leve de Novo • Guia Prático</p>
+        </div>
+    </div>
+
+    <!-- PÁGINA 6: GUIA DE MOVIMENTOS - SEMANA 3 -->
+    <div class="page">
+        <h2 class="text-2xl text-orange-800 mb-6 uppercase tracking-widest border-b pb-2 italic">Semana 3: Integração Total</h2>
+        <p class="text-sm text-gray-600 mb-8 italic">Foco: Equilíbrio e Fluidez Global. Unir as partes num movimento único.</p>
+        
+        <div class="space-y-4">
+            <div class="p-4 bg-orange-50 rounded-xl flex items-start">
+                <span class="font-bold text-orange-700 mr-4">01</span>
+                <p class="text-sm"><strong>A Alga Marinha:</strong> De pé, balance todo o corpo lateralmente como se estivesse no fundo do mar. Sinta a ondulação subir dos pés à cabeça.</p>
+            </div>
+            <div class="p-4 bg-white border border-gray-100 rounded-xl flex items-start">
+                <span class="font-bold text-orange-700 mr-4">02</span>
+                <p class="text-sm"><strong>O Oito:</strong> Desenhe o símbolo do infinito (um 8 deitado) com o nariz no ar. Depois tente desenhá-lo com o quadril.</p>
+            </div>
+            <div class="p-4 bg-orange-50 rounded-xl flex items-start">
+                <span class="font-bold text-orange-700 mr-4">03</span>
+                <p class="text-sm"><strong>Despreguiçar de Tigre:</strong> Alongue um braço para cima e a perna oposta para baixo. Estique cada milímetro da sua pele.</p>
+            </div>
+            <div class="p-4 bg-white border border-gray-100 rounded-xl flex items-start">
+                <span class="font-bold text-orange-700 mr-4">04</span>
+                <p class="text-sm"><strong>Toque na Estrela:</strong> Fique na ponta dos pés e tente tocar no teto. Solte os calcanhares no chão com um baque leve para vibrar os ossos.</p>
+            </div>
+            <div class="p-4 bg-orange-50 rounded-xl flex items-start">
+                <span class="font-bold text-orange-700 mr-4">05</span>
+                <p class="text-sm"><strong>Equilíbrio em Um Pé:</strong> Tente ficar em um pé só por 20 segundos. Imagine raízes saindo da sola do seu pé em direção à terra.</p>
+            </div>
+            <div class="p-4 bg-white border border-gray-100 rounded-xl flex items-start">
+                <span class="font-bold text-orange-700 mr-4">06</span>
+                <p class="text-sm"><strong>Limpeza de Aura:</strong> Passe as mãos ao redor do corpo sem tocar, inspirando fundo. Limpe a tensão acumulada do dia.</p>
+            </div>
+            <div class="p-4 bg-orange-50 rounded-xl flex items-start">
+                <span class="font-bold text-orange-700 mr-4">07</span>
+                <p class="text-sm"><strong>Caminhada Consciente:</strong> Ande pela casa sentindo cada parte do pé tocar o solo: calcanhar, planta, dedos. Com total presença.</p>
+            </div>
+        </div>
+        <div class="footer-brand">
+            <p class="text-[10px] text-gray-400 uppercase tracking-widest">Corpo Leve de Novo • Guia Prático</p>
+        </div>
+    </div>
+
+    <!-- PÁGINA 7: MAPA DO SUCESSO -->
     <div class="page bg-gray-50">
         <div class="text-center mb-6">
             <h2 class="text-3xl text-teal-800 mb-1">Mapa do Sucesso</h2>
-            <p class="text-gray-500 text-sm italic">O seu compromisso visual com a vitalidade</p>
+            <p class="text-gray-500 text-sm italic">O seu ritual de 21 dias</p>
         </div>
 
         <div class="flex justify-between items-center mb-6 bg-white p-4 rounded-xl shadow-sm text-sm border border-teal-50">
-            <span><strong>Início:</strong> ____/____/____</span>
-            <span><strong>Até:</strong> ____/____/____</span>
+            <span><strong>Data de Início:</strong> ____/____/____</span>
+            <span><strong>Finalização:</strong> ____/____/____</span>
         </div>
 
-        <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 mb-6">
-            <h3 class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-3 italic text-center">Como me sinto hoje? (Legenda Acolhedora)</h3>
-            <div class="grid grid-cols-3 gap-2 text-[11px] leading-tight">
-                <div class="flex items-start"><span class="font-bold text-teal-500 mr-2 text-sm">L</span> <span><strong>Leve:</strong> Senti fluidez e espaço no corpo.</span></div>
-                <div class="flex items-start"><span class="font-bold text-orange-400 mr-2 text-sm">C</span> <span><strong>Cansada:</strong> Respeitei o meu limite hoje.</span></div>
-                <div class="flex items-start"><span class="font-bold text-purple-500 mr-2 text-sm">E</span> <span><strong>Energia:</strong> Sinto-me desperta e presente.</span></div>
+        <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 mb-6">
+            <div class="grid grid-cols-3 gap-2 text-[10px] leading-tight">
+                <div class="flex items-start"><span class="font-bold text-teal-500 mr-2 text-sm">L</span> <span><strong>Leve:</strong> Corpo fluido e mente calma.</span></div>
+                <div class="flex items-start"><span class="font-bold text-orange-400 mr-2 text-sm">C</span> <span><strong>Cansada:</strong> Respeitei o cansaço hoje.</span></div>
+                <div class="flex items-start"><span class="font-bold text-purple-500 mr-2 text-sm">E</span> <span><strong>Energia:</strong> Sinto vigor e vitalidade.</span></div>
             </div>
         </div>
 
@@ -188,92 +314,111 @@
                 <tr>
                     <th width="10%">Dia</th>
                     <th width="10%" class="text-center">Feito</th>
-                    <th width="25%" class="text-center">Sinalizar</th>
-                    <th width="55%">Compromisso de Presença</th>
+                    <th width="20%" class="text-center">Sinalizar</th>
+                    <th width="60%">Compromisso de Presença</th>
                 </tr>
             </thead>
             <tbody class="text-gray-700">
+                <!-- SEMANA 1 -->
                 <tr>
                     <td class="font-bold text-teal-600">01</td>
                     <td><div class="check-box-circle"></div></td>
-                    <td class="text-center text-[10px] text-gray-400">L &nbsp; C &nbsp; E</td>
-                    <td class="italic text-[10px]">Fiz as pazes com o meu corpo hoje.</td>
+                    <td class="text-center text-[9px] text-gray-400">L &nbsp; C &nbsp; E</td>
+                    <td class="italic text-[10px]">Hoje fiz as pazes com o meu corpo.</td>
                 </tr>
                 <tr>
                     <td class="font-bold text-teal-600">02</td>
                     <td><div class="check-box-circle"></div></td>
-                    <td class="text-center text-[10px] text-gray-400">L &nbsp; C &nbsp; E</td>
+                    <td class="text-center text-[9px] text-gray-400">L &nbsp; C &nbsp; E</td>
                     <td class="italic text-[10px]">Habitei os meus 7 minutos de autocuidado.</td>
                 </tr>
                 <tr>
                     <td class="font-bold text-teal-600">03</td>
                     <td><div class="check-box-circle"></div></td>
-                    <td class="text-center text-[10px] text-gray-400">L &nbsp; C &nbsp; E</td>
-                    <td class="italic text-[10px]">Respirei com intenção e calma.</td>
+                    <td class="text-center text-[9px] text-gray-400">L &nbsp; C &nbsp; E</td>
+                    <td class="italic text-[10px]">Respirei com intenção e calma profunda.</td>
                 </tr>
                 <tr>
                     <td class="font-bold text-teal-600">04</td>
                     <td><div class="check-box-circle"></div></td>
-                    <td class="text-center text-[10px] text-gray-400">L &nbsp; C &nbsp; E</td>
-                    <td class="italic text-[10px]">Escutei o que o meu corpo pediu.</td>
+                    <td class="text-center text-[9px] text-gray-400">L &nbsp; C &nbsp; E</td>
+                    <td class="italic text-[10px]">Escutei com carinho o que o corpo pediu.</td>
                 </tr>
                 <tr>
                     <td class="font-bold text-teal-600">05</td>
                     <td><div class="check-box-circle"></div></td>
-                    <td class="text-center text-[10px] text-gray-400">L &nbsp; C &nbsp; E</td>
-                    <td class="italic text-[10px]">Deixei a tensão sair com o movimento.</td>
+                    <td class="text-center text-[9px] text-gray-400">L &nbsp; C &nbsp; E</td>
+                    <td class="italic text-[10px]">Deixei a tensão sair através do movimento.</td>
                 </tr>
                 <tr>
                     <td class="font-bold text-teal-600">06</td>
                     <td><div class="check-box-circle"></div></td>
-                    <td class="text-center text-[10px] text-gray-400">L &nbsp; C &nbsp; E</td>
-                    <td class="italic text-[10px]">Celebrei a minha pequena vitória hoje.</td>
+                    <td class="text-center text-[9px] text-gray-400">L &nbsp; C &nbsp; E</td>
+                    <td class="italic text-[10px]">Celebrei a minha pequena vitória de hoje.</td>
                 </tr>
                 <tr>
                     <td class="font-bold text-teal-600">07</td>
                     <td><div class="check-box-circle"></div></td>
-                    <td class="text-center text-[10px] text-gray-400">L &nbsp; C &nbsp; E</td>
+                    <td class="text-center text-[9px] text-gray-400">L &nbsp; C &nbsp; E</td>
                     <td class="italic text-[10px]">Completei a minha primeira semana!</td>
                 </tr>
+                <!-- SEMANA 2 -->
                 <tr class="border-t-2 border-purple-100">
                     <td class="font-bold text-purple-600">08</td>
                     <td><div class="check-box-circle"></div></td>
-                    <td class="text-center text-[10px] text-gray-400">L &nbsp; C &nbsp; E</td>
-                    <td class="italic text-[10px]">Despertei o meu centro de poder.</td>
+                    <td class="text-center text-[9px] text-gray-400">L &nbsp; C &nbsp; E</td>
+                    <td class="italic text-[10px]">Despertei o meu centro de poder e bacia.</td>
                 </tr>
-                <tr><td colspan="4" class="text-center py-1 text-[9px] text-gray-400">... continuação até o Dia 21 ...</td></tr>
+                <tr>
+                    <td class="font-bold text-purple-600">09</td>
+                    <td><div class="check-box-circle"></div></td>
+                    <td class="text-center text-[9px] text-gray-400">L &nbsp; C &nbsp; E</td>
+                    <td class="italic text-[10px]">Firmei as minhas raízes no chão.</td>
+                </tr>
+                <tr>
+                    <td class="font-bold text-purple-600">10</td>
+                    <td><div class="check-box-circle"></div></td>
+                    <td class="text-center text-[9px] text-gray-400">L &nbsp; C &nbsp; E</td>
+                    <td class="italic text-[10px]">Desejei liberdade para as minhas pernas.</td>
+                </tr>
+                <tr><td colspan="4" class="text-center py-1 text-[9px] text-gray-400">... mantenha a presença até ao final ...</td></tr>
+                <tr class="border-t-2 border-orange-100">
+                    <td class="font-bold text-orange-600">21</td>
+                    <td><div class="check-box-circle"></div></td>
+                    <td class="text-center text-[9px] text-gray-400">L &nbsp; C &nbsp; E</td>
+                    <td class="italic text-[10px]">Eu sou plena, leve e vital.</td>
+                </tr>
             </tbody>
         </table>
 
-        <div class="mt-8 p-6 bg-teal-900 text-white rounded-2xl shadow-lg">
-            <h4 class="font-bold mb-4 flex items-center text-sm uppercase tracking-widest">
-                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        <div class="mt-8 p-5 bg-teal-900 text-white rounded-2xl shadow-lg">
+            <h4 class="font-bold mb-3 flex items-center text-xs uppercase tracking-widest">
                 Revisão de Evolução (Dia 21)
             </h4>
-            <div class="grid grid-cols-1 gap-2 text-xs opacity-90">
-                <div class="flex items-center"><div class="w-3 h-3 border border-white rounded mr-2"></div> Percebo que me movo com mais suavidade no dia a dia.</div>
-                <div class="flex items-center"><div class="w-3 h-3 border border-white rounded mr-2"></div> Minhas articulações parecem hidratadas e livres.</div>
-                <div class="flex items-center"><div class="w-3 h-3 border border-white rounded mr-2"></div> O ritual tornou-se o meu momento de refúgio.</div>
+            <div class="grid grid-cols-1 gap-2 text-[10px] opacity-90">
+                <div class="flex items-center"><div class="w-3 h-3 border border-white rounded mr-2"></div> O movimento agora faz parte de quem eu sou.</div>
+                <div class="flex items-center"><div class="w-3 h-3 border border-white rounded mr-2"></div> Sinto-me mais conectada com as minhas sensações.</div>
+                <div class="flex items-center"><div class="w-3 h-3 border border-white rounded mr-2"></div> A rigidez deu lugar à curiosidade pelo corpo.</div>
             </div>
         </div>
     </div>
 
-    <!-- PÁGINA 5: MENSAGEM FINAL -->
+    <!-- PÁGINA 8: O QUE VEM A SEGUIR -->
     <div class="page flex flex-col justify-between text-center">
         <div class="pt-20">
-            <h2 class="text-4xl text-teal-800 mb-6 italic">A sua jornada continua.</h2>
-            <p class="text-gray-600 max-w-md mx-auto mb-12 leading-relaxed">Você provou que a consistência gentil vence a intensidade agressiva. O seu corpo agora confia em você para novos passos.</p>
+            <h2 class="text-4xl text-teal-800 mb-6 italic">O fim é apenas o começo.</h2>
+            <p class="text-gray-600 max-w-md mx-auto mb-12 leading-relaxed">Agora que o seu corpo sabe o que é a leveza, não aceite menos do que isso no seu dia a dia.</p>
             
             <div class="grid grid-cols-1 gap-6 text-left max-w-lg mx-auto">
                 <div class="p-6 bg-teal-50 rounded-2xl border border-teal-100 shadow-sm">
-                    <span class="text-[10px] font-bold uppercase tracking-widest text-teal-600">Próximo Nível</span>
-                    <h4 class="text-lg font-bold mt-1 text-teal-900 italic">Sono de Rainha</h4>
-                    <p class="text-sm text-gray-600">Rituais pré-sono para desligar o sistema nervoso em minutos e garantir o descanso profundo.</p>
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-teal-600">Bónus Exclusivo</span>
+                    <h4 class="text-lg font-bold mt-1 text-teal-900">Sono de Rainha</h4>
+                    <p class="text-sm text-gray-600">3 rituais de 2 minutos para fazer na cama e desligar o sistema nervoso antes de dormir.</p>
                 </div>
                 <div class="p-6 bg-purple-50 rounded-2xl border border-purple-100 shadow-sm">
-                    <span class="text-[10px] font-bold uppercase tracking-widest text-purple-600">Aprofundamento</span>
-                    <h4 class="text-lg font-bold mt-1 text-purple-900 italic">Imersão Fáscia Viva</h4>
-                    <p class="text-sm text-gray-600">Liberação miofascial caseira para dores persistentes e vitalidade celular profunda.</p>
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-purple-600">Comunidade</span>
+                    <h4 class="text-lg font-bold mt-1 text-purple-900 italic">Círculo da Vitalidade</h4>
+                    <p class="text-sm text-gray-600">Junte-se a outras mulheres que escolheram a suavidade como caminho de força.</p>
                 </div>
             </div>
         </div>
